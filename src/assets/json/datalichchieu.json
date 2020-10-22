@@ -1,0 +1,334 @@
+[
+  {
+    "id": 1,
+    "rapchieu": [
+      {
+        "choose": false,
+        "id_rap": 1,
+        "ten_rap": "Kinh Dương vương1",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "19/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "choose": false,
+        "id_rap": 2,
+        "ten_rap": "Kinh Dương vương2",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "21/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rapchieu": [
+      {
+        "choose": false,
+        "id_rap": 1,
+        "ten_rap": "Kinh Dương vương1",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "19/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "choose": false,
+        "id_rap": 2,
+        "ten_rap": "Kinh Dương vương2",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "21/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rapchieu": [
+      {
+        "choose": false,
+        "id_rap": 1,
+        "ten_rap": "Kinh Dương vương1",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "19/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "choose": false,
+        "id_rap": 2,
+        "ten_rap": "Kinh Dương vương",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "21/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rapchieu": [
+      {
+        "choose": false,
+        "id_rap": 1,
+        "ten_rap": "Kinh Dương vương1",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "19/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "choose": false,
+        "id_rap": 2,
+        "ten_rap": "Kinh Dương vương2",
+        "ngaychieu": [
+          {
+            "choose": false,
+            "id_ngay": "20/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          },
+          {
+            "choose": false,
+            "id_ngay": "21/8/2020",
+            "thoigian": [
+              {
+                "choose": false,
+                "id_gio": "8h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              },
+              {
+                "choose": false,
+                "id_gio": "10h30",
+                "id_ghe": [1, 2, 3, 4, 5, 6]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

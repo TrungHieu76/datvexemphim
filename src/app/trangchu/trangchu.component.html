@@ -1,0 +1,121 @@
+<div class="banner">
+  <nz-carousel nzAutoPlay>
+    <div nz-carousel-content *ngFor="let index of array">
+      <img src="{{ index }}" alt="" />
+    </div>
+  </nz-carousel>
+</div>
+<ul nz-menu nzMode="horizontal">
+  <li nz-menu-item (click)="filterfilmsapchieu('choosefalse')">
+    <a class="vn">PHIM ĐANG CHIẾU</a>
+    <a class="en">FILM IS SHOWING</a>
+  </li>
+  <li nz-menu-item (click)="filterfilmsapchieu('choosetrue')">
+    <a class="vn">PHIM SẮP CHIẾU</a>
+    <a class="en">MOVIE SHOW</a>
+  </li>
+</ul>
+<div class="vn">
+  <div class="flex-container">
+    <div class="item" *ngFor="let data of datafilm">
+      <div class="img-ct">
+        <img src="{{ data.img }}" />
+      </div>
+      <div class="info-card hide-sm">
+        <div class="card-show">
+          <a
+            ><b>{{ data.ten }} </b></a
+          >
+          <b class="daodien">Đạo diễn: {{ data.daodien }} </b>
+          <a>
+            <nz-rate [ngModel]="data.rate" nzDisabled></nz-rate>
+          </a>
+          <button
+            type="button"
+            class="btn btn-danger"
+            [routerLink]="['/muave', data.name]"
+          >
+            <a>MUA VÉ</a>
+          </button>
+        </div>
+        <div class="card-hide">
+          <a><b>Thể loại:</b> {{ data.theloai }}</a>
+          <a><b>Diễn viên:</b> {{ data.dienvien }}</a>
+          <div class="star">
+            <h4>Cast</h4>
+            <ul>
+              <li *ngFor="let datadienvien of data.imgdienvien">
+                <img src="{{ datadienvien.img }}" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-card-sm">
+        <b>{{ data.ten }} </b>
+        <button
+          type="button"
+          class="btn btn-danger"
+          [routerLink]="['/muave', data.name]"
+        >
+          MUA VÉ
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="en">
+  <div class="flex-container">
+    <div class="item" *ngFor="let data of datafilm">
+      <div class="img-ct">
+        <img src="{{ data.img }}" />
+      </div>
+      <div class="info-card hide-sm">
+        <div class="card-show">
+          <a
+            ><b>{{ data.name }}</b></a
+          >
+          <b class="daodien">
+            <a>Directors: {{ data.daodien }}</a>
+          </b>
+          <a>
+            <nz-rate [ngModel]="data.rate" nzDisabled></nz-rate>
+          </a>
+          <button
+            type="button"
+            class="btn btn-danger"
+            [routerLink]="['/muave', data.name]"
+          >
+            <a>buy ticket</a>
+          </button>
+        </div>
+        <div class="card-hide">
+          <a><b>Type:</b> {{ data.type }}</a>
+          <a
+            ><a><b>Cast:</b></a> {{ data.dienvien }}</a
+          >
+          <div class="star">
+            <h4>Cast</h4>
+            <ul>
+              <li *ngFor="let datadienvien of data.imgdienvien">
+                <img src="{{ datadienvien.img }}" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-card-sm">
+        <b>{{ data.name }} </b>
+        <b>
+          <button
+            type="button"
+            class="btn btn-danger"
+            [routerLink]="['/muave', data.name]"
+          >
+            <a>Buy ticket</a>
+          </button>
+        </b>
+      </div>
+    </div>
+  </div>
+</div>

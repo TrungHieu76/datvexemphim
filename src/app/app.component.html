@@ -1,0 +1,274 @@
+<div class="width80-lg width100-sm">
+  <header class="header">
+    <ul class="nav justify-content-end display-none-sm">
+      <li class="nav-item nav-link" style="padding-right: 0; height: 100%;">
+        <a class="vn">Tuyển Dụng</a>
+        <a class="en">recruitment</a>
+      </li>
+      <li class="nav-item nav-link" style="padding-right: 0;">
+        <a class="vn">Liên Hệ CGV</a>
+        <a class="en">Contact CGV</a>
+      </li>
+      <li class="nav-item nav-link">
+        <a *ngIf="user" (click)="out()">Đăng xuất</a>
+        <a *ngIf="!user" class="vn" [routerLink]="['login']">Đăng Nhập</a><a *ngIf="!user" class="en"
+          [routerLink]="['login']">login</a>
+        <a *ngIf="!user">/</a>
+        <a *ngIf="!user" class="vn" [routerLink]="['signup']">Đăng Ký</a>
+        <a *ngIf="!user" class="en" [routerLink]="['signup']">Sign up</a>
+      </li>
+      <li *ngIf="user" style="padding-top: 0.5rem; margin-right: 3px;color: goldenrod;">{{ user.email }}
+      </li>
+      <li style="padding-top: 0.5rem; margin-right: 3px;">
+        <div style="display: flex; text-align: center;">
+          <nz-switch [(ngModel)]="switchValue" nzCheckedChildren="EN" nzUnCheckedChildren="VN" [nzControl]="true"
+            (click)="clickSwitch()" [nzLoading]="loading"></nz-switch>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-end display-none-sm" style="align-items: center;">
+      <li class="nav-item nav-link col-nav-ct">
+        <img src="assets/img/cgvlogo.png" style="width: 200px;" />
+      </li>
+      <li class="nav-item nav-link col-nav-ct" style="padding-top: 3rem;">
+        <a class="vn" [routerLink]="['trangchu']">
+          TRANG CHỦ
+        </a>
+        <a class="en" [routerLink]="['trangchu']">
+          Home page
+        </a>
+      </li>
+      <li class="nav-item nav-link col-nav-ct vn" style="padding-top: 3rem;">
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+          <a class="vn">PHIM</a>
+          <a class="en">Film</a>
+          <i nz-icon nzType="down"></i>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item>
+              <a (click)="filterfilmsapchieu('choosefalse')">PHIM ĐANG CHIẾU</a>
+            </li>
+            <li nz-menu-item (click)="filterfilmsapchieu('choosetrue')">
+              <a>PHIM SẮP CHIẾU</a>
+            </li>
+          </ul>
+        </nz-dropdown-menu>
+      </li>
+      <li class="nav-item nav-link col-nav-ct en" style="padding-top: 3rem;">
+        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menuen">
+          <a class="en">FILM</a>
+          <i nz-icon nzType="down"></i>
+        </a>
+        <nz-dropdown-menu #menuen="nzDropdownMenu">
+          <ul nz-menu>
+            <li nz-menu-item (click)="filterfilmsapchieu('choosefalse')">
+              <a>FILM IS SHOWING</a>
+            </li>
+            <li nz-menu-item (click)="filterfilmsapchieu('choosetrue')">
+              <a>MOVIE SHOW</a>
+            </li>
+          </ul>
+        </nz-dropdown-menu>
+      </li>
+
+      <li class="nav-item nav-link col-nav-ct" style="padding-top: 3rem;">
+        <a class="vn" [routerLink]="['lichsugiaodich']">
+          LỊCH SỬ GIAO DỊCH
+        </a>
+        <a class="en" [routerLink]="['lichsugiaodich']">TRANSACTION HISTORY</a>
+      </li>
+      <li class="nav-item nav-link col-search-ct">
+        <div class="example-input">
+          <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixIconButton">
+            <input placeholder="input here" nz-input [(ngModel)]="inputValue" (input)="onChange($event)"
+              [nzAutocomplete]="auto" />
+          </nz-input-group>
+          <ng-template #suffixIconButton>
+            <button (click)="search(inputValue)" nz-button nzType="primary" nzSize="large" nzSearch>
+              <i nz-icon nzType="search" nzTheme="outline"></i>
+            </button>
+          </ng-template>
+          <nz-autocomplete #auto>
+            <nz-auto-option class="global-search-item" *ngFor="let option of options" [nzValue]="option.value">
+              <a class="global-search-item-desc" href="/muave/{{ option.value }}" target="_blank"
+                rel="noopener noreferrer">
+                {{ option.value }}
+              </a>
+            </nz-auto-option>
+          </nz-autocomplete>
+        </div>
+      </li>
+    </ul>
+
+    <div class="display-none-lg header-sm">
+      <nav class="navbar">
+        <button class="btn" id="btnmenu" type="button">
+          <i class="fa fa-bars" style="font-size: 36px;"></i>
+        </button>
+        <button class="btn" id="btnseach" type="button">
+          <i class="fas fa-search" style="font-size: 36px;"></i>
+        </button>
+        <button class="btn" type="button" id="btnuser">
+          <i class="material-icons" style="font-size: 36px;">person</i>
+        </button>
+        <div class="col-3">
+          <nz-switch [(ngModel)]="switchValue" nzCheckedChildren="EN" nzUnCheckedChildren="VN" [nzControl]="true"
+            (click)="clickSwitch()" [nzLoading]="loading"></nz-switch>
+        </div>
+      </nav>
+      <div class="display-none-sm" id="menu-sm">
+        <div class="p-4" style="color: black;" id="trangchu-sm">
+          <p [routerLink]="['trangchu']">
+            <a class="vn">TRANG CHỦ</a><a class="en">HOME</a>
+          </p>
+          <p (click)="filterfilmsapchieu('choosefalse')">
+            <a class="vn">PHIM ĐANG CHIẾU</a><a class="en">FILM IS SHOWING</a>
+          </p>
+          <p (click)="filterfilmsapchieu('choosetrue')">
+            <a class="vn">PHIM SẮP CHIẾU</a><a class="en">MOVIE SHOW</a>
+          </p>
+          <p [routerLink]="['lichsugiaodich']">
+            <a class="vn">LỊCH SỬ GIAO DỊCH</a><a class="en">TRANSACTION HISTORY</a>
+          </p>
+        </div>
+      </div>
+      <div class="display-none-sm" id="user-sm">
+        <div class="p-4" style="color: black;">
+          <p *ngIf="user" style="color: goldenrod;">{{ user.email }}</p>
+          <p *ngIf="user"><a class="vn">ĐĂNG XUẤT</a><a class="en">OUT</a></p>
+          <p *ngIf="!user" class="user-item-sm" [routerLink]="['login']">
+            <a class="vn">ĐĂNG NHẬP</a><a class="en">LOGIN</a>
+          </p>
+          <p *ngIf="!user" class="user-item-sm" [routerLink]="['signup']">
+            <a class="vn">ĐĂNG KÝ</a><a class="en">SIGN UP</a>
+          </p>
+        </div>
+      </div>
+      <div class="display-none-sm" id="seach-sm">
+        <div class="p-4">
+          <div class="example-input">
+            <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixIconButton">
+              <input placeholder="input here" nz-input [(ngModel)]="inputValue" (input)="onChange($event)"
+                [nzAutocomplete]="auto" />
+            </nz-input-group>
+            <ng-template #suffixIconButton>
+              <button (click)="search(inputValue)" nz-button nzType="primary" nzSize="large" nzSearch>
+                <i nz-icon nzType="search" nzTheme="outline"></i>
+              </button>
+            </ng-template>
+            <nz-autocomplete #auto>
+              <nz-auto-option class="global-search-item" *ngFor="let option of options" [nzValue]="option.value">
+                <a class="global-search-item-desc" href="/muave/{{ option.value }}" target="_blank"
+                  rel="noopener noreferrer">
+                  {{ option.value }}
+                </a>
+              </nz-auto-option>
+            </nz-autocomplete>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer vn">
+    <div class="footer-hl">
+      <ul>
+        <li class="footer-hl-title">CGV VIỆT NAM</li>
+        <li>Giới thiệu</li>
+        <li>Tiện Ích Online</li>
+        <li>Thẻ Quà Tặng</li>
+        <li>Tuyển Dụng</li>
+        <li>Liên Hệ Quảng Cáo CGV</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">
+          Điều khoản sử dụng
+        </li>
+        <li>Điều Khoản Chung</li>
+        <li>Điều Khoản Giao Dịch</li>
+        <li>Thanh Toán</li>
+        <li>Chính Sách Bảo Mật</li>
+        <li>Câu Hỏi Thường Gặp</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">CGV VIỆT NAM</li>
+        <li>Giới thiệu</li>
+        <li>Tiện Ích Online</li>
+        <li>Thẻ Quà Tặng</li>
+        <li>Tuyển Dụng</li>
+        <li>Liên Hệ Quảng Cáo CGV</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">CGV VIỆT NAM</li>
+        <li>Giới thiệu</li>
+        <li>Tiện Ích Online</li>
+        <li>Thẻ Quà Tặng</li>
+        <li>Tuyển Dụng</li>
+        <li>Liên Hệ Quảng Cáo CGV</li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <hr style="width: 100%; background-color: white;" />
+      CÔNG TY TNHH CJ CGV VIETNAM<br />
+      Giấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 31/7/2008, đăng ký thay đổi
+      lần thứ 5 ngày 14/10/2015, cấp bởi Sở KHĐT thành phố Hồ Chí Minh.<br />
+      Địa Chỉ: Tầng 2, Rivera Park Saigon - Số 7/28 Thành Thái, P.14, Q.10,
+      TPHCM.<br />Hotline: 1900 6017<br />COPYRIGHT 2017 CJ CGV. All RIGHTS
+      RESERVED .
+    </div>
+  </div>
+  <div class="footer en">
+    <div class="footer-hl">
+      <ul>
+        <li class="footer-hl-title">CGV Vietnam</li>
+        <li>About Us</li>
+        <li>Gift Card</li>
+        <li>Career</li>
+        <li>Contact CGV</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">
+          Terms and Conditions
+        </li>
+        <li>Conditions of Website Use</li>
+        <li>Terms of Use</li>
+        <li>Payment Policy</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">Customer Service</li>
+        <li>Hotline: 1900 6017</li>
+        <li>
+          Working hours: 8:00 - 22:00 (Monday to Sunday, including Public
+          Holidays)
+        </li>
+        <li>Email support: hoidap@cgv.vn</li>
+      </ul>
+      <ul>
+        <li class="footer-hl-title">
+          Terms and Conditions
+        </li>
+        <li>Conditions of Website Use</li>
+        <li>Terms of Use</li>
+        <li>Thanh Toán</li>
+        <li>Payment Policy</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <hr style="width: 100%; background-color: white;" />
+      COMPANY CJ CGV VIETNAM<br />
+      Business registration certificate: 0303675393, registered for the first
+      time on 31/7/2008, registered for the fifth change on 14/10/2015, issued
+      by HCMC Department of Planning and Investment.<br />
+      Address: Floor 2, Rivera Park Saigon - No. 7/28 Thanh Thai street, Ward
+      14, District 10, HCMC.<br />Hotline: 1900 6017<br />
+      COPYRIGHT 2017 CJ CGV. All RIGHTS RESERVED .
+    </div>
+  </div>
+  <nz-back-top [nzVisibilityHeight]="400"></nz-back-top>
+</div>

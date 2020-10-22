@@ -1,0 +1,26 @@
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .login-form {
+    margin-left: 5%;
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .login-form {
+    margin-left: 30%;
+    width: 40%;
+    max-width: 40%;
+  }
+}

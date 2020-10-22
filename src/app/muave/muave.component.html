@@ -1,0 +1,198 @@
+<div class="info-datve">
+  <div class="img-chitietphim">
+    <img src="{{ film.img }}" />
+    <i nz-icon nzType="play-circle" nzTheme="outline" (click)="showModal()"></i>
+  </div>
+  <div class="info-chitietfilm">
+    <div>
+      <b class="vn">{{ film.ten }} </b><b class="en">{{ film.name }}</b>
+    </div>
+    <div>
+      <nz-rate [(ngModel)]="film.rate" [nzTooltips]="tooltips"></nz-rate>
+      <span *ngIf="film.rate" class="ant-rate-text">{{
+        film.rate ? tooltips[film.rate - 1] : "  "
+      }}</span>
+      <button
+        type="button"
+        class="btn btn-warning vn"
+        style="margin-left: 10px;"
+      >
+        ĐÁNH GIÁ
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning en"
+        style="margin-left: 10px;"
+      >
+        RATE
+      </button>
+    </div>
+    <div>
+      <a class="vn">Thể loại: {{ film.theloai }}</a>
+      <a class="en">Type: {{ film.type }}</a>
+    </div>
+    <div>
+      <a class="vn">Quốc gia: {{ film.quocgia }}</a
+      ><a class="en">Country: {{ film.country }}</a>
+    </div>
+    <div>
+      <a class="vn">Diễn viên:</a><a class="en">Cast:</a>{{ film.dienvien }}
+    </div>
+    <div>
+      <a class="vn">Đạo diễn:</a><a class="en">Directors:</a> {{ film.daodien }}
+    </div>
+  </div>
+
+  <div class="noidungfilm">
+    <ul nz-menu nzMode="horizontal" class="header-noidungfilm">
+      <li nz-menu-item nzSelected class="vn">
+        NỘI DUNG PHIM
+      </li>
+      <li nz-menu-item nzSelected class="en">
+        CONTENT FILM
+      </li>
+    </ul>
+    <div class="vn">{{ film.noidung }}</div>
+    <div class="en">{{ film.content }}</div>
+  </div>
+  <div id="lichchieu" class="noidungfilm hidden">
+    <ul nz-menu nzMode="horizontal" class="header-noidungfilm">
+      <li nz-menu-item nzSelected class="vn">
+        LỊCH CHIẾU
+      </li>
+      <li nz-menu-item nzSelected class="en">
+        SHOWTIMES
+      </li>
+    </ul>
+    <div class="main-datve">
+      <div class="width-7 cacbuocdat-sm">
+        <nz-tabset>
+          <nz-tab [nzTitle]="'Rạp chiếu phim'">
+            <nz-tag
+              *ngFor="let idrap of lichchieu_id.rapchieu"
+              nzMode="checkable"
+              [nzChecked]="idrap.choose"
+              (click)="chooserap(idrap)"
+              (nzCheckedChange)="checkChange($event)"
+              ><a>{{ idrap.ten_rap }}</a></nz-tag
+            >
+          </nz-tab>
+          <nz-tab [nzTitle]="'Ngày chiếu'">
+            <nz-tag
+              nzMode="checkable"
+              *ngFor="let idngay of ngaychieu_id; let i = index"
+              (click)="choosengay(idngay, i)"
+              [nzChecked]="idngay.choose"
+              (nzCheckedChange)="checkChange($event)"
+              ><a>{{ idngay.id_ngay }}</a></nz-tag
+            >
+          </nz-tab>
+          <nz-tab [nzTitle]="'Chọn giờ'">
+            <nz-tag
+              *ngFor="let idgio of giochieu_id; let ih = index"
+              (click)="choosegio(idgio, ih)"
+              nzMode="checkable"
+              [nzChecked]="idgio.choose"
+              (nzCheckedChange)="checkChange($event)"
+              ><a>
+                {{ idgio.id_gio }}
+              </a></nz-tag
+            >
+          </nz-tab>
+          <nz-tab [nzTitle]="'Chọn ghế'">
+            <nz-tag
+              *ngFor="let idghe of ghe_id"
+              (click)="chooseghe(idghe)"
+              nzMode="checkable"
+              [nzChecked]="false"
+              (nzCheckedChange)="checkChange($event)"
+              ><a> {{ idghe }}</a></nz-tag
+            >
+          </nz-tab>
+        </nz-tabset>
+      </div>
+      <div class="width-3">
+        <div class="img">
+          <img src="{{ film.img }}" alt="" />
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">{{ film.ten }} </b><b class="en">{{ film.name }}</b>
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">Rạp: </b><b class="en">Cinema:</b>{{ tenrap }}
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">Ngày chiếu: </b><b class="en">Release date:</b
+          >{{ ngaychieu }}
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">Giờ chiếu: </b><b class="en">Show time:</b
+          >{{ giochieu }}
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">Số ghế: </b><b class="en">Seats:</b>
+          <a *ngFor="let item of soghe">{{ item }},</a>
+        </div>
+        <div class="listinfofilm">
+          <b class="vn">Số lượng vé: </b><b class="en">Number of tickets:</b>
+          <a>{{ soluongve }}</a>
+        </div>
+        <div class="listinfofilm">
+          <button (click)="datve()" type="button" class="btn btn-warning">
+            Xác nhận Đặt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="binhluan">
+  <ul nz-menu nzMode="horizontal">
+    <li nz-menu-item nzSelected class="vn">
+      BÌNH LUẬN
+    </li>
+    <li nz-menu-item nzSelected class="en">
+      comments
+    </li>
+  </ul>
+  <ng-template #commentTemplateRef let-comment="comment">
+    <nz-comment [nzAuthor]="comment.author">
+      <nz-avatar
+        nz-comment-avatar
+        nzIcon="user"
+        [nzSrc]="comment.avatar"
+      ></nz-avatar>
+      <nz-comment-content>
+        <p>{{ comment.content }}</p>
+      </nz-comment-content>
+      <nz-comment-action>Reply to</nz-comment-action>
+      <ng-container *ngIf="comment.children && comment.children.length">
+        <ng-template ngFor let-child [ngForOf]="comment.children">
+          <ng-template
+            [ngTemplateOutlet]="commentTemplateRef"
+            [ngTemplateOutletContext]="{ comment: child }"
+          >
+          </ng-template>
+        </ng-template>
+      </ng-container>
+    </nz-comment>
+  </ng-template>
+
+  <ng-template
+    [ngTemplateOutlet]="commentTemplateRef"
+    [ngTemplateOutletContext]="{ comment: data }"
+  >
+  </ng-template>
+</div>
+
+<!-- --fullvideo -->
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzWidth="100%"
+  (nzOnOk)="handleOk()"
+  (nzOnCancel)="handleCancel()"
+  nzTitle="Trailer"
+  nzOkText="Mua vé"
+>
+  <iframe class="modal-trailer" [src]="urlSafe" frameborder="0"> </iframe>
+</nz-modal>

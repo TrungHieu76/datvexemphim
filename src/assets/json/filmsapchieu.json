@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "ten": "BÁN ĐẢO PENINSULA",
+    "name": "PENINSULA",
+    "rate": 3,
+    "trailer": "https://www.youtube.com/embed/x20O9HWN910?rel=0&autoplay=1",
+    "noidung": "Vì số tiền khổng lồ 2,5 triệu $, cựu quân nhân Jung Seok trở lại bán đảo bất chấp tình huống ngàn cân treo sợi tóc. Chẳng may, anh và đồng đội bị lữ đoàn biến chất 631 cùng đàn zombie khát máu phục kích. Được gia đình Min Jung giải cứu, Jung Seok phải tìm cách đào thoát trước khi quá trễ!",
+    "content": "PENINSULA takes place four years after the zombie outbreak in TRAIN TO BUSAN. The Korean peninsula is devastated and Jung-seok, a former soldier who has managed to escape overseas, is given a mission to go back and unexpectedly meets survivors.",
+    "theloai": "Hành Động, Kinh Dị, Phiêu Lưu",
+    "quocgia": "Tiếng Hàn",
+    "country": "Korean",
+    "type": "Action, Adventure, Horror",
+    "daodien": "Sang-ho Yeon",
+    "dienvien": "Dong-won Gang, Jung-hyun Lee, John D. Michaels",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/kang-dong-won.jpg"
+      },
+      {
+        "img": "../assets/img/jung-hyunlee.jpg"
+      },
+      {
+        "img": "../assets/img/john.jpg"
+      }
+    ],
+    "img": "../assets/img/keannap.jpg"
+  },
+  {
+    "id": 2,
+    "ten": "HẦM QUỶ",
+    "name": "BEHIND YOU",
+    "rate": 4,
+    "trailer": "https://www.youtube.com/embed/urLY5e33b-I?rel=0&autoplay=1",
+    "noidung": "Hai chị em Olivia và Claire sau cái chết của mẹ đã chuyển đến sống cùng dì Beth. Tại đây, một thực thể tà ác đang ẩn mình sau những tấm gương. Trong một lần vô tình, cô bé Claire đã giải phóng cho linh hồn ác quỷ kia thoát ra. Liệu số phận của các nhân vật sẽ ra sao?",
+    "content": "Behind You's story revolves around two children, Olivia (Addy Miller) and her sister Claire (Elizabeth Birkner). After the sudden death of the mother and father abroad, both are forced to live with Aunt Beth (Jan Bronberg). However, Olivia gradually noticed her aunt's strange expressions and actions. From here, a series of horrifying events began to take place that put the lives of the two sisters in danger.",
+    "theloai": "Kinh Dị",
+    "quocgia": "Tiếng Anh",
+    "country": "English",
+    "type": "Horror",
+    "daodien": "Andrew Mecham, Matthew Whedon",
+    "dienvien": "Addy Miller, Elizabeth Birkner, Jan Broberg",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/addy.jpg"
+      },
+      {
+        "img": "../assets/img/Elizabeth Birkner.jpg"
+      },
+      {
+        "img": "../assets/img/janb.jpg"
+      }
+    ],
+    "img": "../assets/img/ham-quy.jpg"
+  },
+  {
+    "id": 3,
+    "ten": "TIỆC TRĂNG MÁU",
+    "name": "INCREASING BLOOD",
+    "rate": 4,
+    "trailer": "https://www.youtube.com/embed/IgRJbN88l7E?rel=0&autoplay=1",
+    "noidung": "Trong buổi họp mặt của nhóm bạn thân, một thành viên bất ngờ đề xuất trò chơi chia sẻ điện thoại nhằm tăng tinh thần “đoàn kết”. Từ đó, những góc khuất của từng người dần hé lộ và khiến cho mối quan hệ vốn khắng khít của họ bắt đầu lay chuyển.",
+    "content": "In a close friend group meeting, a member suddenly proposed a game of sharing the phone to increase the spirit of solidarity. From there, the hidden corners of each person gradually revealed and made their already close relationship begin to shake.",
+    "theloai": "Hài, Tâm Lý",
+    "quocgia": "Tiếng Việt",
+    "country": "VietNamese",
+    "type": "Comedy, Drama",
+    "daodien": "Nguyễn Quang Dũng",
+    "dienvien": "Hồng Ánh, Hứa Vỹ Văn , Thu Trang, Kiều Minh Tuấn, Kaity Nguyễn",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/hvv.jpg"
+      },
+      {
+        "img": "../assets/img/tt.jpg"
+      },
+      {
+        "img": "../assets/img/Kieu-minh-tuan2-3463-1537203564.jpg"
+      }
+    ],
+    "img": "../assets/img/ttm.jpg"
+  },
+  {
+    "id": 4,
+    "ten": "QUÁ NHANH QUÁ NGUY HIỂM 9",
+    "name": "FAST & FURIOUS 9: THE FAST SAGA",
+    "rate": 5,
+    "trailer": "https://www.youtube.com/embed/LdprCQdFlfM?rel=0&autoplay=1",
+    "noidung": "Fast & Furious 9 nói về trận chiến mới giữa Dom và những người đồng đội của mình. Lần này ngoại trừ nữ phản diện quen thuộc Cipher thì phim có thêm sự xuất hiện của nhân vật Jacob - em trai của Dom.",
+    "content": "Fast & Furious 9 is about the new battle between Dom and his teammates. This time, except for the familiar villain Cipher, the movie has the appearance of the character Jacob - Dom's younger brother.",
+    "theloai": "Hành Động, Phiêu Lưu",
+    "quocgia": "Mỹ",
+    "country": "U.S",
+    "type": "Action, Adventure",
+    "daodien": "Justin Lin",
+    "dienvien": " Charlize Theron, Jim Parrack, John Cena",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/ct.jpg"
+      },
+      {
+        "img": "../assets/img/Jim_Parrack.jpg"
+      },
+      {
+        "img": "../assets/img/John_Cena.jpg"
+      }
+    ],
+    "img": "../assets/img/F9.jpg"
+  }
+]
