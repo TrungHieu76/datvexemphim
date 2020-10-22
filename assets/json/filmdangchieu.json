@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "ten": "CÁ SẤU TỬ THẦN",
+    "name": "BLACK WATER: ABYSS",
+    "rate": 5,
+    "trailer": "https://www.youtube.com/embed/C092DPRuogE?rel=0&autoplay=1",
+    "noidung": "Bỏ qua dự báo về cơ bão sắp đến, một nhóm bạn cùng nhau khám phá một hang động mới. Tưởng chừng sẽ an toàn dưới lòng đất, một cơn lũ ập đến khiến họ mất phương hướng. Sự hoảng loạn càng tăng khi mực nước đang không ngừng dâng cao. Tuy nhiên đó chưa phải là tất cả, cơn bão còn mang đến những kẻ săn mồi đói khát đang chực chờ họ dưới dòng nước tối.",
+    "content": "The 5 spelunkers abseil into the deep mouth of the cave as a storm approaches, none are worried by the forecast, knowing they’ll be safe underground. But when the caves are flooded, they become disoriented and tensions rise as they struggle to find a way out. But dank air and rising water are the least of their worries as they discover the storm has also brought in hungry predators.",
+    "theloai": "Hành động, tâm lý, kinh dị",
+    "type": "action, psychological, horror",
+    "quocgia": "Úc",
+    "country": "Australia",
+    "daodien": "Andrew Traucki",
+    "dienvien": "Jessica McNamee, Luke Mitchell Traucki",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/Jessica_McNamee_3.jpg"
+      },
+      {
+        "img": "../assets/img/zyeihYtK.jpg"
+      },
+      {
+        "img": "../assets/img/avt.jpg"
+      }
+    ],
+    "img": "../assets/img/casaututhan.jpg"
+  },
+  {
+    "id": 2,
+    "ten": "ĐIỆP VIÊN SIÊU LẦY",
+    "name": "MY SPY",
+    "rate": 4,
+    "trailer": "https://www.youtube.com/embed/jiHzd87NpNM?rel=0&autoplay=1",
+    "noidung": "Jason Jones, hay còn gọi là JJ (Dave Bautista) – một điệp viên CIA dày dạn kinh nghiệm. Trong một lần thực địa, JJ bị cô bé 9 tuổi Sophie (Chloe Coleman) phát hiện và uy hiếp anh phải “gia sư” môn điệp viên cho mình nếu không muốn cả thế giới biết thân phận thực sự của anh. Mắc kẹt bên cô học trò lắm mưu nhiều mẹo, JJ dần phát hiện ra Sophie thực sự có tố chất và năng khiếu bẩm sinh cho việc trở thành điệp viên.",
+    "content": "When CIA field agent Jason Jones – or JJ (Dave Bautista) – is demoted to a light surveillance detail, he finds himself at the mercy of a sweet but determined 9-year-old girl, Sophie (Chloe Coleman), who uses her tech savviness and street smarts to find JJ’s undercover hideout near the apartment she shares with her mother. In exchange for not blowing JJ’s cover, Sophie convinces him to spend time with her and teach her to be a spy. Despite his reluctance, JJ finds he is no match for Sophie’s disarming charm, intelligence and aptitude for espionage",
+    "theloai": "Hài, Hành Động",
+    "quocgia": "Úc",
+    "country": "U.S",
+    "type": "Action, Comedy",
+    "daodien": "Peter Segal",
+    "dienvien": "Dave Bautista, Chloe Coleman, Kristen Schaal, Ken Jeongs",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/Dave_Bautista_by_Gage_Skidmore_2.jpg"
+      },
+      {
+        "img": "../assets/img/chloe.jpg"
+      },
+      {
+        "img": "../assets/img/kc.jpg"
+      }
+    ],
+    "img": "../assets/img/diepviensieulay.jpg"
+  },
+  {
+    "id": 3,
+    "ten": "KẺ ẨN NẤP",
+    "name": "YOU'RE NOT ALONE",
+    "rate": 4,
+    "trailer": "https://www.youtube.com/embed/Wq7_uTsroBQ?rel=0&autoplay=1",
+    "noidung": "Emma và đứa con gái Isla chuyển về sống tại nhà mới sau nhiều năm xa cách. Tuy nhiên tại đây dường như có một thế lực đen tối nào đó đang đe dọa tính mạng của hai mẹ con cô.",
+    "content": "An evil entity begins to torment a mother and daughter, who are forced to face the inexplicable presence that inhabits the walls of their new home.",
+    "theloai": "Hài, Hành Động",
+    "quocgia": "Úc",
+    "country": "U.S",
+    "type": "Thriller",
+    "daodien": "Eduardo Rodriguez",
+    "dienvien": "Katia Winter, Julee Cerda, Zach Avery",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/Katia_Winter.jpg"
+      },
+      {
+        "img": "../assets/img/julee-cerda-broadway.jpg"
+      },
+      {
+        "img": "../assets/img/Zach_Avery.jpg"
+      }
+    ],
+    "img": "../assets/img/keannap.jpg"
+  },
+  {
+    "id": 4,
+    "ten": "BÁN ĐẢO PENINSULA",
+    "name": "PENINSULA",
+    "rate": 5,
+    "trailer": "https://www.youtube.com/embed/x20O9HWN910?rel=0&autoplay=1",
+    "noidung": "Vì số tiền khổng lồ 2,5 triệu $, cựu quân nhân Jung Seok trở lại bán đảo bất chấp tình huống ngàn cân treo sợi tóc. Chẳng may, anh và đồng đội bị lữ đoàn biến chất 631 cùng đàn zombie khát máu phục kích. Được gia đình Min Jung giải cứu, Jung Seok phải tìm cách đào thoát trước khi quá trễ!",
+    "content": "PENINSULA takes place four years after the zombie outbreak in TRAIN TO BUSAN. The Korean peninsula is devastated and Jung-seok, a former soldier who has managed to escape overseas, is given a mission to go back and unexpectedly meets survivors.",
+    "theloai": "Hành Động, Kinh Dị, Phiêu Lưu",
+    "quocgia": "Tiếng Hàn",
+    "country": "Korean",
+    "type": "Action, Adventure, Horror",
+    "daodien": "Sang-ho Yeon",
+    "dienvien": "Dong-won Gang, Jung-hyun Lee, John D. Michaels",
+    "imgdienvien": [
+      {
+        "img": "../assets/img/kang-dong-won.jpg"
+      },
+      {
+        "img": "../assets/img/jung-hyunlee.jpg"
+      },
+      {
+        "img": "../assets/img/john.jpg"
+      }
+    ],
+    "img": "../assets/img/peninsula-main-poster_1593073124470.jpg"
+  }
+]
